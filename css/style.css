@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#value {
+    width: 300px;
+    background-color: #333;
+    color: white;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+section {
+    background-color: #9fcf1c;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
