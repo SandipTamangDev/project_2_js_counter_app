@@ -1,7 +1,7 @@
 # **Counter App**
 
-This is a simple Counter App built with **pure JavaScript, HTML, and CSS**.
-The goal is to help beginners strengthen their fundamentals before moving to bigger projects like Todo Lists or Habit Trackers. 
+A simple Counter App built with **pure JavaScript, HTML, and CSS**.
+Designed to help beginners strengthen fundamentals before moving to larger projects like Todo Lists or Habit Trackers.
 
 ---
 
@@ -12,41 +12,43 @@ The goal is to help beginners strengthen their fundamentals before moving to big
 ---
 
 ## **Project Goals**
-- DOM selection
-- Event handling  
-- Variables & State
-- Updating the DOM
 
+* DOM selection
+* Event handling
+* Variables & state
+* Updating the DOM
 
 ---
 
 ## **Features**
-- Feature 1 (e.g., Button click interaction)  
-- Feature 2 (e.g., Responsive layout)  
-- Feature 3 (Optional)  
+
+* Increment & decrement counter
+* Reset counter
+* Counter state saved in `localStorage`
 
 ---
 
 ## **Tech Stack**
-- HTML  
-- CSS  
-- JavaScript  
+
+* HTML
+* CSS
+* JavaScript
 
 ---
 
 ## **Folder Structure**
 
 ```
-
 project_folder_name/
 ├── css/
 │   └── styles.css
 ├── js/
 │   └── script.js
+├── .gitattributes
+├── GUIDE.md
 ├── index.html
 ├── README.md
 └── screenshot.png
-
 ```
 
 > Adjust this to your actual project structure.
@@ -54,45 +56,52 @@ project_folder_name/
 ---
 
 ## **How It Works**
-You can see the project live [here](LIVE_PROJECT_LINK).  
 
-- Step 1: What the user does (e.g., open `index.html`)  
-- Step 2: How interaction works (e.g., click a button to toggle)  
-- Step 3: Any other key behavior (e.g., localStorage saves state)  
+Live project: [[LINK_TO_LIVE_PROJECT](https://sandiptamangdev.github.io/project_2_js_counter_app/)]
+
+1. Open `index.html` in a browser
+2. Click **Increase** or **Decrease** buttons to change the counter
+3. **Reset** button sets counter to 0
+4. Counter value persists using `localStorage`
 
 ---
 
 ## **What I Learned**
 
+### HTML
 
+* Preventing accidental zoom on iPhones is tricky; meta viewport `user-scalable=no` can block it, but accessibility concerns discourage full disabling. CSS `touch-action: none` is recommended for pinch gestures.
+* Understanding accessibility constraints: modern browsers prioritize user experience and accessibility.
 
-- HTML: Key learning points  
-- CSS: Key learning points  
-- JS: Key learning points  
+### CSS
+
+* Use `rem` instead of `px` for scalable borders and sizing.
+* Prefer `min-height`/`max-height` and `min-width`/`max-width` over fixed `height`/`width` for responsive layouts.
+* `transform: scale(1.05)` adds subtle UI feedback, improving UX.
+
+### JavaScript
+
+* `let` for mutable counter; `const` for unchanging values like max/min.
+* DOM selection: `document.getElementById()` vs `document.querySelector()` (both work with IDs).
+* `parseInt(localStorage.getItem("counter") || 0)` ensures correct counter initialization.
+* Understanding `||` as logical OR: returns first truthy value.
+* `textContent` vs `innerText` vs `innerHTML`:
+
+  * `textContent`: fastest, ignores CSS, safest for updating text.
+  * `innerText`: slower, respects visible text, may trigger reflow.
+  * `innerHTML`: parses HTML, allows element injection, risky for untrusted input.
+* Event listeners: arrow functions improve readability, `if` checks prevent exceeding max/min.
 
 ---
 
 ## **Future Improvements**
-- Idea 1  
-- Idea 2  
-- Idea 3  
+
+* Disable double-click zoom only for counter buttons
+* Add keyboard support for increment/decrement
+* Animate counter changes for smoother UX
 
 ---
 
-## Author
-[Your Name](https://www.tamangsandip.com.np/)
-```
+## **Author**
 
----
-
-This covers:
-
-* Title & description
-* Screenshot
-* Goals & features
-* Tech stack
-* Folder structure
-* How it works (with live demo link)
-* Learnings
-* Future improvements
-* Author link
+[Sandip Tamang](https://www.tamangsandip.com.np/)
