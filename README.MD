@@ -51,13 +51,11 @@ project_folder_name/
 └── screenshot.png
 ```
 
-> Adjust this to your actual project structure.
-
 ---
 
 ## **How It Works**
 
-Live project: [[LINK_TO_LIVE_PROJECT](https://sandiptamangdev.github.io/project_2_js_counter_app/)]
+Live project: [[here](https://sandiptamangdev.github.io/project_2_js_counter_app/)]
 
 1. Open `index.html` in a browser
 2. Click **Increase** or **Decrease** buttons to change the counter
